@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.OrderActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уточнение"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Желаемое время получения заказа"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11 Янв 2022"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_light"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:47"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_light"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtsome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Улица"
+            android:textSize="18dp"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/yardInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtsome"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txthome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дом"
+                android:textSize="18dp"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"/>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/homeInfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txthome"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtpod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Подъезд"
+                android:textSize="18dp"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"/>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/podInfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtpod"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtapatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Квартира"
+                android:textSize="18dp"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"/>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/apartmentInfo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtapatment"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Комментарии"
+            android:textSize="18sp"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+
+
+        <EditText
+            android:id="@+id/commentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/offerOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Оформить Заказ" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

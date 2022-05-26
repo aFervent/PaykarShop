@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="8dp"
+    android:id="@+id/catalog_layout"
+    app:cardCornerRadius="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <!--            <com.yarolegovich.discretescrollview.DiscreteScrollView-->
+                <!--                android:id="@+id/home_sales_r_v"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                app:dsv_orientation="horizontal"-->
+                <!--                android:overScrollMode="never"-->
+                <!--                tools:listitem="@layout/row_sales"-->
+                <!--                app:layout_constraintTop_toTopOf="parent"-->
+                <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                app:layout_constraintStart_toEndOf="@+id/sales_arrow_left"-->
+                <!--                app:layout_constraintEnd_toStartOf="@+id/sales_arrow_right"/>-->
+
+                <ImageView
+                    android:id="@+id/imageviewSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+            </androidx.cardview.widget.CardView>
+
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/imageviewSlider"-->
+<!--        android:background="@mipmap/ic_launcher"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:layout_height="match_parent" />-->
+
+
+</RelativeLayout>

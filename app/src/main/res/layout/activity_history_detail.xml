@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bottomfragment.profile.history.HistoryDetailActivity">
+
+    <TextView
+        android:id="@+id/number_of_order_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказ 222"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/oformlen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оформлен:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/date_of_oformlen_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="10dp"
+            android:text="24.2.2"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/status_of_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Статус заказа:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/status_text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="80dp"
+            android:text="Отменен"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Домой"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/catalog"
+        android:title="Каталог"
+        android:icon="@drawable/ic_baseline_catalog_24"/>
+    <item
+        android:id="@+id/search"
+        android:title="Поиск"
+        android:icon="@drawable/ic_baseline_search_24"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Профиль"
+        android:icon="@drawable/ic_baseline_person_outline_24"/>
+    <item
+        android:id="@+id/basket"
+        android:title="Корзина"
+        android:icon="@drawable/ic_baseline_shopping_basket_24"/>
+</menu>
